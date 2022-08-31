@@ -8,6 +8,11 @@ namespace WorkflowDemo.Controllers;
 
 public class DesignerController : Controller
 {
+    public IActionResult Index()
+    {
+        return View();
+    }
+    
     public async Task<IActionResult> Api()
     {
         Stream? filestream = null;
